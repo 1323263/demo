@@ -1,0 +1,573 @@
+
+@font-face {
+    font-family: Rubik-medium;
+    src: url(fonts/Rubik-Medium.ttf);
+}@font-face {
+    font-family: rubik;
+    src: url(fonts/Rubik-Light.ttf);
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: white;
+    font-family: rubik;
+}
+h1, h2, h3, h4, a{
+    font-family: Rubik-medium;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+a:hover{
+    text-decoration: underline;
+}
+
+button{
+    background-color: #ff5b35;
+    color: #fcfcfa;
+    border: 0;
+    border-radius: 0.7rem;
+    padding: 1rem 2rem;
+    margin: 2rem 0;
+}
+div.contet{
+    width: 80%;
+    margin: 0 auto;
+}
+
+
+/* MAIN
+-------------------------------------------------------------------------- */
+section.main{
+    background-image: url("img/3.jfif");
+    background-repeat: no-repeat;
+ background-size: cover;
+}
+
+/* HEADER
+-------------------------------------------------------------------------- */
+div.header{
+    padding: 3% 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+    div.logo h1{
+        font-size: medium;
+    }
+
+div.header div.nav{
+    width: 50%;
+    text-align: center;
+}
+
+div.header div.nav li{
+    list-style-type: none;
+    display: inline;
+    margin: 0 5%;
+    font-size: 150%;
+}
+
+div.header div.icons{
+    width: 13%;
+    display: flex;
+    justify-content: space-between;
+    padding: 1%;
+}
+
+div.header div.icons img{
+    width: 25px;
+    height: 25px;
+}
+
+/* HEADER
+-------------------------------------------------------------------------- */
+
+
+
+#plitka {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1240px;
+
+}
+
+/* BANNER
+------------------------------------------------------------ */
+section.banner{
+    background-size: 100%;
+    height: 36.5rem;
+}
+
+div.banner{
+    height: 100%;
+    justify-content: space-between;
+     padding: 5%;
+    align-items: center;
+    text-align: center;
+}
+    div.banner div.information{
+        margin-top: 3rem;
+    }
+
+        div.banner div.information h2{
+            font-size: 4.5em;
+            text-transform: uppercase;
+        }
+
+        div.banner div.information h2.blue{
+            color: #32bfce;
+        }
+
+        div.banner div.information p{
+            font-weight: normal;
+        }
+
+/* ABOUT
+--------------------------------------------------------------------- */
+section.about{
+    padding: 8rem 0;
+}
+
+div.about{
+    display: flex;
+    justify-content: space-between;
+}
+
+    div.about div.text{
+        width: 50%;
+    }
+        div.text h2{
+            margin-bottom: 2rem;
+            font-size: 3em;
+            font-weight: 400;
+        }
+
+        div.text p{
+            margin: 1rem 0;
+            font-size: 1.3em;
+            font-weight: 400;
+        }
+div.cards{
+    display: flex;
+    justify-content: center;
+    height: 10%;
+    margin-top: 5rem;
+    height: 25rem;
+}
+    div.cards div.card{
+        width: 30%;
+        margin: 0 1rem;
+        border-radius: 3rem;
+        padding: 3%;
+    }
+
+    div.cards div.card#first{
+        background-color: #f3e5f4;
+    }
+
+    div.cards div.card#second{
+        background-color: #daf3f5;
+    }
+
+    div.cards div.card#third{
+        background-color: #f6eed1;
+    }
+
+    div.cards div.card div.card_img{
+        height: 75%;
+        text-align: center;
+        padding: 3%;
+    }
+
+        div.card_img img{
+            height: 100%;
+        }
+
+    div.cards div.card h4{
+        font-size: 1.2em;
+    }
+
+    div.cards div.card p{
+        margin: 1rem 0;
+    }
+
+/* ADVANTAGES
+---------------------------------------------------------- */
+section.advantages{
+    background-color: #e8e7df;
+    border-radius: 8rem;
+}
+div.advantages{
+    padding: 8rem 0;
+    text-align: center;
+}
+    div.advantages h1{
+        font-size: 3rem;
+        text-transform: uppercase;
+        margin-bottom: 1rem;
+    }
+
+    div.advantage_icons{
+        margin-top: 3rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+        div.advantage_icon h5{
+            width: 60%;
+            font-size: 1.2em;
+            font-weight: bolder;
+            text-align: center;
+        }
+
+        div.advantage_icon#delivery h5{
+            position: relative;
+            top: 60px;
+            left: 5px;
+        }
+
+        div.advantage_icon#events h5{
+            position: relative;
+            top: 90px;
+            left: 40px;
+        }
+
+        div.advantage_icon#exclusive h5{
+            position: relative;
+            top: 120px;
+            left: 32px;
+        }
+        div.advantage_icon#range h5{
+            position: relative;
+            top: 105px;
+            left: 45px;
+        }
+
+        div.advantage_icon#payment h5{
+            position: relative;
+            top: 150px;
+            left: 15px;
+        }
+
+/* FAVOURITES
+---------------------------------------------------------------*/
+div.favourites{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8rem 0;
+}
+    div.favourite_text{
+        width: 50%;
+    }
+
+        div.favourite_text h3{
+            font-size: 4em;
+            text-transform: uppercase;
+        }
+
+    div.favourite_cards{
+        width: 50%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: end;
+    }
+        div.favourite_card{
+            background-color: #e8e7df;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            margin: 3%;
+        }
+
+        div.favourite_card h4{
+            text-align: center;
+            margin: 1rem 0;
+            font-size: 1.3em;
+        }
+
+        div.favourite_card#dino{
+            border-radius: 1rem 1rem 1rem 8rem;
+            width: 80%;
+        }
+
+        div.favourite_card#treasure_hunt{
+            border-radius: 10rem;
+            width: 40%;
+        }
+
+        div.favourite_card#sleep_joe{
+            border-radius: 2.5rem;
+            width: 40%;
+        }
+
+/* LEAD  transform rotate
+--------------------------------------------------------- */
+section.lead{
+    background-image: url("img/photo.png");
+    background-size: 100%;
+}
+div.lead{
+    padding: 10% 0;
+    display: flex;
+    justify-content: flex-start;
+}
+    div.label{
+        margin-top: -5%;
+    }
+
+    div.label h4{
+        width: 60%;
+        font-size: 1.4em;
+        color: #32bfce;
+        position: relative;
+        top: 90px;
+        left: 30px;
+        transform:rotate(-32deg);
+    }
+    div.information_text{
+        width: 50%;
+    }
+
+    div.information_text h3{
+        font-size: 3em;
+        text-transform: uppercase;
+    }
+
+    div.information_text p{
+        font-size: 1.2em;
+        margin-top: 2rem;
+    }
+
+/* GAME CARD
+------------------------------------------------------------------------*/
+div.game{
+    padding: 10% 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+    div.photo{
+        width:45%;
+        margin: 0 1rem;
+    }
+
+        div.photo img{
+            width: 100%;
+        }
+
+    div.description{
+        width:45%;
+        margin: 0 1rem;
+    }
+        div.information_bar{
+            display: flex;
+        }
+            div.title{
+                background-color: #daf3f5;
+                border-radius: 1rem;
+                padding: 3%;
+                display: flex;
+                align-items: center;
+                text-transform: uppercase;
+                margin-right: 2rem;
+                width: 40%;
+            }
+
+                div.title img{
+                    margin-right: 0.4rem;
+                }
+
+            div.rate{
+                display: flex;
+                align-items: center;
+                width: 40%;
+            }
+
+                div.rate img#rate{
+                    width: 2.2rem;
+                    margin-right: 1rem;
+                }
+
+                div.rate h4{
+                    font-size: 2em;
+                }
+
+        div.descripte h3{
+            text-transform: uppercase;
+            font-size: 3em;
+            margin: 0.8rem 0;
+        }
+
+        div.features{
+            margin-top: 1rem;
+            display: flex;
+            justify-content: space-between;
+        }
+
+            div.feature{
+                display: flex;
+                align-items: center;
+            }
+
+                div.feature img{
+                    margin-right: 0.4rem;
+                }
+
+        div.pay{
+            display: flex;
+            align-items: center;
+        }
+
+            div.pay h3{
+                margin-right: 2rem;
+            }
+
+    div.frames{
+        width:45%;
+        margin: 1rem;
+    }
+
+        div.frames div.tabs{
+            width: 100%;
+            background-color: #f0f0eb;
+            border-radius: 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+                div.frames input[type=radio]{
+                    display: none;
+                }
+
+                div.frames label{
+                    border-radius: 1rem;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    height: 40px;
+                    width: 155px;
+                    font-weight: bold;
+                    margin: 1%;
+                }
+                div.frames input[type=radio]:checked + label{
+                    background-color: #f5d961;
+                }
+
+        div.frame{
+            padding-top: 1rem;
+        }
+
+/* EVENT
+---------------------------------------------------------------------- */
+section.event{
+    background-color: #f4f4f4;
+    height: 47rem;
+    padding-top: 4%;
+}
+
+    div.event{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+        div.information_event{
+            align-self: auto;
+            width: 45%;
+        }
+
+            div.information_event h3{
+                text-transform: uppercase;
+                font-size: 3em;
+                margin-bottom: 1rem;
+            }
+
+            div.information_event p{
+                font-size: 1.1em;
+                margin-bottom: 1rem;
+            }
+
+            div.information_event div.stickers{
+                display: flex;
+                flex-wrap: wrap;
+                font-size: 1.5em;
+            }
+
+
+        div.form{
+            width: 40%;
+        }
+
+            div.form form{
+
+            }
+
+                form input[type=text],input[type=email],input[type=tel]{
+                    width: 100%;
+                    background-color: #f0f0eb;
+                    border:1px solid #c7c7c7 ;
+                    border-radius: 1rem;
+                    padding: 3%;
+                    margin: 1rem 0;
+                }
+
+                label.muted{
+                    color: black;
+                }
+
+                div.radio_group{
+                    margin: 1rem 0;
+                    display: flex;
+                    align-items: center;
+                }
+
+                    div.radio_group label{
+                        margin-left: 0.5rem;
+                        margin-right: 2rem;
+                    }
+
+
+
+
+
+
+/* FOOTER
+---------------------------------------------------------------------- */
+footer{
+    background-color: #e8e7df;
+}
+
+div.footer{
+    padding: 2rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+    div.circle{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 30%;
+    }
+
+        div.circle p{
+            font-size: 1em;
+        }
+
+    div.networks {
+        width: 10%;
+    }
+        div.networks img{
+            margin: 0 1%;
+        }
